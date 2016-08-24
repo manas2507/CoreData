@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		18541FA41D5C3D410046EAD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FA31D5C3D410046EAD0 /* main.m */; };
 		18541FA71D5C3D410046EAD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FA61D5C3D410046EAD0 /* AppDelegate.m */; };
-		18541FAA1D5C3D410046EAD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FA91D5C3D410046EAD0 /* ViewController.m */; };
 		18541FAD1D5C3D420046EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541FAB1D5C3D420046EAD0 /* Main.storyboard */; };
 		18541FB01D5C3D420046EAD0 /* MyStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18541FAE1D5C3D420046EAD0 /* MyStore.xcdatamodeld */; };
 		18541FB21D5C3D420046EAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18541FB11D5C3D420046EAD0 /* Assets.xcassets */; };
 		18541FB51D5C3D420046EAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541FB31D5C3D420046EAD0 /* LaunchScreen.storyboard */; };
 		18541FC01D5C3D420046EAD0 /* MyStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FBF1D5C3D420046EAD0 /* MyStoreTests.m */; };
 		18541FCB1D5C3D420046EAD0 /* MyStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FCA1D5C3D420046EAD0 /* MyStoreUITests.m */; };
+		18541FDA1D5C4CAE0046EAD0 /* MyStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FD91D5C4CAE0046EAD0 /* MyStoreTableViewController.m */; };
+		18541FDD1D5DDCD90046EAD0 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18541FDC1D5DDCD90046EAD0 /* DeviceDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		18541FA31D5C3D410046EAD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18541FA51D5C3D410046EAD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18541FA61D5C3D410046EAD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18541FA81D5C3D410046EAD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18541FA91D5C3D410046EAD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18541FAC1D5C3D420046EAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18541FAF1D5C3D420046EAD0 /* MyStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyStore.xcdatamodel; sourceTree = "<group>"; };
 		18541FB11D5C3D420046EAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,10 @@
 		18541FC61D5C3D420046EAD0 /* MyStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18541FCA1D5C3D420046EAD0 /* MyStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyStoreUITests.m; sourceTree = "<group>"; };
 		18541FCC1D5C3D420046EAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18541FD81D5C4CAE0046EAD0 /* MyStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStoreTableViewController.h; sourceTree = SOURCE_ROOT; };
+		18541FD91D5C4CAE0046EAD0 /* MyStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoreTableViewController.m; sourceTree = SOURCE_ROOT; };
+		18541FDB1D5DDCD90046EAD0 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
+		18541FDC1D5DDCD90046EAD0 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +108,11 @@
 			children = (
 				18541FA51D5C3D410046EAD0 /* AppDelegate.h */,
 				18541FA61D5C3D410046EAD0 /* AppDelegate.m */,
-				18541FA81D5C3D410046EAD0 /* ViewController.h */,
-				18541FA91D5C3D410046EAD0 /* ViewController.m */,
+				18541FD81D5C4CAE0046EAD0 /* MyStoreTableViewController.h */,
+				18541FD91D5C4CAE0046EAD0 /* MyStoreTableViewController.m */,
 				18541FAB1D5C3D420046EAD0 /* Main.storyboard */,
+				18541FDB1D5DDCD90046EAD0 /* DeviceDetailViewController.h */,
+				18541FDC1D5DDCD90046EAD0 /* DeviceDetailViewController.m */,
 				18541FB11D5C3D420046EAD0 /* Assets.xcassets */,
 				18541FB31D5C3D420046EAD0 /* LaunchScreen.storyboard */,
 				18541FB61D5C3D420046EAD0 /* Info.plist */,
@@ -273,8 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18541FAA1D5C3D410046EAD0 /* ViewController.m in Sources */,
 				18541FA71D5C3D410046EAD0 /* AppDelegate.m in Sources */,
+				18541FDA1D5C4CAE0046EAD0 /* MyStoreTableViewController.m in Sources */,
+				18541FDD1D5DDCD90046EAD0 /* DeviceDetailViewController.m in Sources */,
 				18541FA41D5C3D410046EAD0 /* main.m in Sources */,
 				18541FB01D5C3D420046EAD0 /* MyStore.xcdatamodeld in Sources */,
 			);
